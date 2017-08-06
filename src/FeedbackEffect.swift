@@ -125,12 +125,8 @@ public struct FeedbackEffect {
     public static func play(sound: SoundEmitting?, feedback: HapticFeedback? = nil) {
         if let sound = sound {
             do {
-                let currentCategory = AVAudioSession.sharedInstance().category
                 try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient, with: .mixWithOthers)
-
                 sound.makeSound()
-
-                try AVAudioSession.sharedInstance().setCategory(currentCategory)
             } catch {
                 print("Couldn't play a sound")
             }
