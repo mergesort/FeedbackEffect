@@ -45,7 +45,7 @@ public enum TextTone: Int {
     case popcorn = 1364
     case pulse = 1120
     case synth = 1365
-    case alert = 1005 // & 1017
+    case alert = 1005
     case anticipate = 1020
     case bell = 1013
     case bloom = 1021
@@ -69,7 +69,7 @@ public enum TextTone: Int {
     case swoosh = 1001
     case telegraph = 1033
     case tiptoes = 1034
-    case tritone = 1002 // & 1007 & 1012 & 1015
+    case tritone = 1002
     case tweet = 1016
     case typewriters = 1035
     case update = 1036
@@ -111,31 +111,28 @@ extension VibrationEffect: SoundEmitting {
 extension URL: SoundEmitting {
 
     public func makeSound() {
-        do {
-            let player = try AVAudioPlayer(contentsOf: self)
-            player.prepareToPlay()
-            player.play()
-        } catch {
-            print("Couldn't play sound")
-        }
+        FeedbackEffect.player.removeAllItems()
+        let item = AVPlayerItem(url: self)
+        FeedbackEffect.player.insert(item, after: nil)
+        FeedbackEffect.player.play()
     }
 }
 
 public struct FeedbackEffect {
 
+    static let player = AVQueuePlayer()
+
     public static func play(sound: SoundEmitting?, feedback: HapticFeedback? = nil) {
         if let sound = sound {
             do {
-                //                let currentCategory = AVAudioSession.sharedInstance().category
-                //                print(AVAudioSession.sharedInstance().category)
-                //                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
-                //                try AVAudioSession.sharedInstance().setActive(true)
+                let currentCategory = AVAudioSession.sharedInstance().category
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient, with: .mixWithOthers)
 
                 sound.makeSound()
 
-                //                try AVAudioSession.sharedInstance().setCategory(currentCategory)
-            } catch (let error) {
-                // Logger.error("Could not set playback category. \(error)")
+                try AVAudioSession.sharedInstance().setCategory(currentCategory)
+            } catch {
+                print("Couldn't play a sound")
             }
         }
 
