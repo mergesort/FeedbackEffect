@@ -2,22 +2,34 @@ import AudioToolbox
 import AVFoundation
 import UIKit
 
+/// A protocol for encapsulating the different ways that sound can be created, for use in `FeedbackEffect`.
+public protocol SoundEmitting {
+    
+    func makeSound()
+}
+
+/// A protocol for encapsulating the different ways that haptic feedback can be created, for use in `FeedbackEffect`.
+public protocol HapticEmitting {
+    
+    func generateFeedback()
+}
+
 /// An enum describing the different kinds of haptic feedback the taptic engine is capable of producing.
 /// For use in `FeedbackEffect`, to give the user feedback when it's desired.
 ///
 /// - impact: Used for calling `UIImpactFeedbackGenerator().impactOccurred()`.
 /// - selection: Used for calling `UISelectionFeedbackGenerator().selectionChanged()`.
 /// - notification: Used for calling `UINotificationFeedbackGenerator().notificationOccurred(notificationType)`.
-public enum HapticFeedback {
+public enum HapticFeedback: HapticEmitting {
 
     case impact
     case selection
     case notification(UINotificationFeedbackType)
 }
 
-private extension HapticFeedback {
+extension HapticFeedback {
 
-    func generateFeedback() {
+    public func generateFeedback() {
         switch self {
 
         case .impact:
@@ -30,12 +42,6 @@ private extension HapticFeedback {
             UINotificationFeedbackGenerator().notificationOccurred(notificationType)
         }
     }
-}
-
-/// A protocol for encapsulating the different ways that sound can be created, for use in `FeedbackEffect`.
-public protocol SoundEmitting {
-
-    func makeSound()
 }
 
 /// A set of text message sound effects that iOS provides through the `AudioServicesPlaySystemSound` subsystem.
@@ -105,17 +111,37 @@ extension SoundEffect: SoundEmitting {
 
 /// A set of vibration patterns that iOS uses through the `AudioServicesPlaySystemSound` subsystem
 /// to generate vibrations on devices that do not have a taptic engine.
-public enum VibrationEffect: Int {
+public enum VibrationFeedback {
 
-    case selectionVibration = 1519
-    case impactVibration = 1520
-    case notificationVibration = 1521
+    case selection
+    case impact
+    case notification
+
 }
 
-extension VibrationEffect: SoundEmitting {
+private extension VibrationFeedback {
 
-    public func makeSound() {
-        AudioServicesPlaySystemSound(UInt32(self.rawValue))
+    var audioServicesCode: UInt32 {
+        switch self {
+            
+        case .selection:
+            return 1519
+            
+        case .impact:
+            return 1520
+            
+        case .notification:
+            return 1521
+            
+        }
+    }
+
+}
+
+extension VibrationFeedback: HapticEmitting {
+
+    public func generateFeedback() {
+        AudioServicesPlaySystemSound(self.audioServicesCode)
     }
 }
 
@@ -133,6 +159,7 @@ extension URL: SoundEmitting {
 /// interaction, or when an app would like to signal a noteworthy event.
 public struct FeedbackEffect {
 
+    // The player needs to be retained, so we make it a property.
     static let player = AVQueuePlayer()
 
     /// A function that allows a user to provide feedback to a user.
@@ -140,7 +167,7 @@ public struct FeedbackEffect {
     /// - Parameters:
     ///   - sound: A `SoundEmitting` type to play when feedback occurs.
     ///   - feedback: A `HapticFeedback` type to play when feedback occurs.
-    public static func play(sound: SoundEmitting?, feedback: HapticFeedback? = nil) {
+    public static func play(sound: SoundEmitting?, feedback: HapticEmitting? = nil) {
         if let sound = sound {
             do {
                 try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient, with: .mixWithOthers)
