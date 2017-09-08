@@ -94,6 +94,13 @@ let sound = MessageTone.tweet
 FeedbackEffect.play(sound: sound, feedback: vibration)
 ```
 
+You can use just one at a time too if you wish. Just provide haptics and leave the sound parameter nil. You can also do the opposite and provide a sound with no haptics.
+
+```swift
+let vibration = HapticFeedback.notification(.error)
+FeedbackEffect.play(sound: nil, feedback: vibration)
+```
+
 ---
 
 ## Requirements
