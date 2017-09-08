@@ -166,7 +166,7 @@ public struct FeedbackEffect {
     ///
     /// - Parameters:
     ///   - sound: A `SoundEmitting` type to play when feedback occurs.
-    ///   - feedback: A `HapticFeedback` type to play when feedback occurs.
+    ///   - feedback: A `HapticEmitting` type to play when feedback occurs.
     public static func play(sound: SoundEmitting?, feedback: HapticEmitting? = nil) {
         if let sound = sound {
             do {
