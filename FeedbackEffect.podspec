@@ -10,5 +10,5 @@ Pod::Spec.new do |spec|
   spec.framework    = 'AudioToolbox', 'AVFoundation', 'UIKit'
   spec.requires_arc = true
   spec.social_media_url = 'https://twitter.com/mergesort'
-  spec.ios.deployment_target = '8.0'
+  spec.ios.deployment_target = '10.0'
 end
