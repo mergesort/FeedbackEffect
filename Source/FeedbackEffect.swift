@@ -22,7 +22,7 @@ public protocol HapticEmitting {
 /// - notification: Used for calling `UINotificationFeedbackGenerator().notificationOccurred(notificationType)`.
 public enum HapticFeedback: HapticEmitting {
 
-    case impact
+    case impact(UIImpactFeedbackStyle)
     case selection
     case notification(UINotificationFeedbackType)
 }
@@ -32,8 +32,9 @@ extension HapticFeedback {
     public func generateFeedback() {
         switch self {
 
-        case .impact:
-            UIImpactFeedbackGenerator().impactOccurred()
+        case .impact(let impactStyle):
+            let impactGenerator = UIImpactFeedbackGenerator(style: impactStyle)
+            impactGenerator.impactOccurred()
 
         case .selection:
             UISelectionFeedbackGenerator().selectionChanged()
