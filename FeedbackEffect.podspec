@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'FeedbackEffect'
-  spec.version      = '1.1'
+  spec.version      = '1.2'
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.homepage     = 'https://github.com/mergesort/FeedbackEffect'
   spec.authors      =  { 'Joe Fabisevich' => 'github@fabisevi.ch' }
