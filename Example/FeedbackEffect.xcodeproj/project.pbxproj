@@ -14,6 +14,11 @@
 		B721D10C1F61DF880088DC13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B721D10A1F61DF880088DC13 /* LaunchScreen.storyboard */; };
 		B721D1231F61E1E70088DC13 /* FeedbackEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B721D1221F61DFD20088DC13 /* FeedbackEffect.swift */; };
 		B721D1271F61F0B10088DC13 /* Success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B721D1251F61F04D0088DC13 /* Success.m4a */; };
+		B795F1DF1F7D46E4001C1296 /* MessageTone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795F1DE1F7D46E4001C1296 /* MessageTone.swift */; };
+		B795F1E11F7D46EC001C1296 /* SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795F1E01F7D46EC001C1296 /* SoundEffect.swift */; };
+		B795F1E31F7D4873001C1296 /* VibrationFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795F1E21F7D4873001C1296 /* VibrationFeedback.swift */; };
+		B795F1E51F7D488B001C1296 /* URL+SoundEmitting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795F1E41F7D488B001C1296 /* URL+SoundEmitting.swift */; };
+		B795F1E71F7D49B6001C1296 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795F1E61F7D49B6001C1296 /* HapticFeedback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		B721D1181F61DF890088DC13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B721D1221F61DFD20088DC13 /* FeedbackEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackEffect.swift; sourceTree = "<group>"; };
 		B721D1251F61F04D0088DC13 /* Success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Success.m4a; sourceTree = "<group>"; };
+		B795F1DE1F7D46E4001C1296 /* MessageTone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTone.swift; sourceTree = "<group>"; };
+		B795F1E01F7D46EC001C1296 /* SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffect.swift; sourceTree = "<group>"; };
+		B795F1E21F7D4873001C1296 /* VibrationFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationFeedback.swift; sourceTree = "<group>"; };
+		B795F1E41F7D488B001C1296 /* URL+SoundEmitting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+SoundEmitting.swift"; sourceTree = "<group>"; };
+		B795F1E61F7D49B6001C1296 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,11 @@
 			isa = PBXGroup;
 			children = (
 				B721D1221F61DFD20088DC13 /* FeedbackEffect.swift */,
+				B795F1E61F7D49B6001C1296 /* HapticFeedback.swift */,
+				B795F1E21F7D4873001C1296 /* VibrationFeedback.swift */,
+				B795F1E41F7D488B001C1296 /* URL+SoundEmitting.swift */,
+				B795F1E01F7D46EC001C1296 /* SoundEffect.swift */,
+				B795F1DE1F7D46E4001C1296 /* MessageTone.swift */,
 			);
 			name = Source;
 			path = ../../Source;
@@ -222,7 +237,12 @@
 			files = (
 				B721D1231F61E1E70088DC13 /* FeedbackEffect.swift in Sources */,
 				B721D1041F61DF880088DC13 /* ViewController.swift in Sources */,
+				B795F1E11F7D46EC001C1296 /* SoundEffect.swift in Sources */,
 				B721D1021F61DF880088DC13 /* AppDelegate.swift in Sources */,
+				B795F1E51F7D488B001C1296 /* URL+SoundEmitting.swift in Sources */,
+				B795F1E71F7D49B6001C1296 /* HapticFeedback.swift in Sources */,
+				B795F1DF1F7D46E4001C1296 /* MessageTone.swift in Sources */,
+				B795F1E31F7D4873001C1296 /* VibrationFeedback.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
