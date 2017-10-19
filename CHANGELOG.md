@@ -1,5 +1,9 @@
 # Change Log
 
+# 1.3 (2017-10-17)
+
+- Users can now specify a `UIImpactFeedbackStyle` as such.
+
 # 1.2 (2017-09-25)
 
 - Adding the ability to `prepare()` a `UIImpactGenerator`.
