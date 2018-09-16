@@ -14,9 +14,9 @@ public enum HapticFeedback: HapticEmitting {
     fileprivate static let selectionGenerator = UISelectionFeedbackGenerator()
     fileprivate static let notificationGenerator = UINotificationFeedbackGenerator()
     
-    case impact(UIImpactFeedbackStyle)
+    case impact(UIImpactFeedbackGenerator.FeedbackStyle)
     case selection
-    case notification(UINotificationFeedbackType)
+    case notification(UINotificationFeedbackGenerator.FeedbackType)
 }
 
 extension HapticFeedback {
