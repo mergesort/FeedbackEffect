@@ -28,7 +28,7 @@ public struct FeedbackEffect {
     public static func play(sound: SoundEmitting?, feedback: HapticEmitting? = nil) {
         if let sound = sound {
             do {
-                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.ambient), with: .mixWithOthers)
+                try AVAudioSession.sharedInstance().setCategory(.ambient, mode: .default, options: .mixWithOthers)
                 sound.makeSound()
             } catch {
                 print("Couldn't play a sound")
@@ -39,9 +39,4 @@ public struct FeedbackEffect {
             feedback.generateFeedback()
         }
     }
-}
-
-// Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
-	return input.rawValue
 }
