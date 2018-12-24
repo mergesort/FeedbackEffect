@@ -1,5 +1,9 @@
 # Change Log
 
+# 1.4 (2017-10-17)
+
+- Adding Swift 4.2 support.
+
 # 1.3 (2017-10-17)
 
 - Users can now specify a `UIImpactFeedbackStyle` as such.
