@@ -21,16 +21,6 @@
 		B795F1E71F7D49B6001C1296 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795F1E61F7D49B6001C1296 /* HapticFeedback.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B721D1131F61DF890088DC13 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B721D0F61F61DF880088DC13 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B721D0FD1F61DF880088DC13;
-			remoteInfo = FeedbackEffect;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		B721D0FE1F61DF880088DC13 /* FeedbackEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedbackEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B721D1011F61DF880088DC13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,8 +29,6 @@
 		B721D1081F61DF880088DC13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B721D10B1F61DF880088DC13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B721D10D1F61DF880088DC13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B721D1121F61DF890088DC13 /* FeedbackEffectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedbackEffectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B721D1181F61DF890088DC13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B721D1221F61DFD20088DC13 /* FeedbackEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackEffect.swift; sourceTree = "<group>"; };
 		B721D1251F61F04D0088DC13 /* Success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Success.m4a; sourceTree = "<group>"; };
 		B795F1DE1F7D46E4001C1296 /* MessageTone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTone.swift; sourceTree = "<group>"; };
@@ -58,13 +46,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B721D10F1F61DF890088DC13 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -72,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				B721D1001F61DF880088DC13 /* FeedbackEffect */,
-				B721D1151F61DF890088DC13 /* FeedbackEffectTests */,
 				B721D0FF1F61DF880088DC13 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				B721D0FE1F61DF880088DC13 /* FeedbackEffect.app */,
-				B721D1121F61DF890088DC13 /* FeedbackEffectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,14 +78,6 @@
 				B721D10D1F61DF880088DC13 /* Info.plist */,
 			);
 			path = FeedbackEffect;
-			sourceTree = "<group>";
-		};
-		B721D1151F61DF890088DC13 /* FeedbackEffectTests */ = {
-			isa = PBXGroup;
-			children = (
-				B721D1181F61DF890088DC13 /* Info.plist */,
-			);
-			path = FeedbackEffectTests;
 			sourceTree = "<group>";
 		};
 		B721D1211F61DFD20088DC13 /* Source */ = {
@@ -151,24 +122,6 @@
 			productReference = B721D0FE1F61DF880088DC13 /* FeedbackEffect.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B721D1111F61DF890088DC13 /* FeedbackEffectTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B721D11E1F61DF890088DC13 /* Build configuration list for PBXNativeTarget "FeedbackEffectTests" */;
-			buildPhases = (
-				B721D10E1F61DF890088DC13 /* Sources */,
-				B721D10F1F61DF890088DC13 /* Frameworks */,
-				B721D1101F61DF890088DC13 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B721D1141F61DF890088DC13 /* PBXTargetDependency */,
-			);
-			name = FeedbackEffectTests;
-			productName = FeedbackEffectTests;
-			productReference = B721D1121F61DF890088DC13 /* FeedbackEffectTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,17 +129,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Mergesort;
 				TargetAttributes = {
 					B721D0FD1F61DF880088DC13 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
-					};
-					B721D1111F61DF890088DC13 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = B721D0FD1F61DF880088DC13;
 					};
 				};
 			};
@@ -204,7 +153,6 @@
 			projectRoot = "";
 			targets = (
 				B721D0FD1F61DF880088DC13 /* FeedbackEffect */,
-				B721D1111F61DF890088DC13 /* FeedbackEffectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,13 +166,6 @@
 				B721D10C1F61DF880088DC13 /* LaunchScreen.storyboard in Resources */,
 				B721D1091F61DF880088DC13 /* Assets.xcassets in Resources */,
 				B721D1071F61DF880088DC13 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B721D1101F61DF890088DC13 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,22 +187,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B721D10E1F61DF890088DC13 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B721D1141F61DF890088DC13 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B721D0FD1F61DF880088DC13 /* FeedbackEffect */;
-			targetProxy = B721D1131F61DF890088DC13 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B721D1051F61DF880088DC13 /* Main.storyboard */ = {
@@ -297,6 +223,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -304,6 +231,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -354,6 +282,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -361,6 +290,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -400,7 +330,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mergesort.FeedbackEffect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -415,40 +345,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mergesort.FeedbackEffect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		B721D11F1F61DF890088DC13 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FeedbackEffectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FeedbackEffectTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeedbackEffect.app/FeedbackEffect";
-			};
-			name = Debug;
-		};
-		B721D1201F61DF890088DC13 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FeedbackEffectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FeedbackEffectTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeedbackEffect.app/FeedbackEffect";
 			};
 			name = Release;
 		};
@@ -469,15 +367,6 @@
 			buildConfigurations = (
 				B721D11C1F61DF890088DC13 /* Debug */,
 				B721D11D1F61DF890088DC13 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B721D11E1F61DF890088DC13 /* Build configuration list for PBXNativeTarget "FeedbackEffectTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B721D11F1F61DF890088DC13 /* Debug */,
-				B721D1201F61DF890088DC13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
