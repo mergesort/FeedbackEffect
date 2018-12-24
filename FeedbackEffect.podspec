@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'FeedbackEffect'
-  spec.version      = '1.3'
+  spec.version      = '1.4'
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.homepage     = 'https://github.com/mergesort/FeedbackEffect'
   spec.authors      =  { 'Joe Fabisevich' => 'github@fabisevi.ch' }
@@ -11,4 +11,5 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.social_media_url = 'https://twitter.com/mergesort'
   spec.ios.deployment_target = '10.0'
+  spec.swift_version = '4.2'
 end
