@@ -6,6 +6,7 @@
 //  Copyright © 2017 Mergesort. All rights reserved.
 //
 
+import FeedbackEffect
 import UIKit
 
 class ViewController: UIViewController {

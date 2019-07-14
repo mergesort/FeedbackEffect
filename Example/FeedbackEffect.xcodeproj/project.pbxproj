@@ -3,39 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B721D1021F61DF880088DC13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B721D1011F61DF880088DC13 /* AppDelegate.swift */; };
-		B721D1041F61DF880088DC13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B721D1031F61DF880088DC13 /* ViewController.swift */; };
-		B721D1071F61DF880088DC13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B721D1051F61DF880088DC13 /* Main.storyboard */; };
-		B721D1091F61DF880088DC13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B721D1081F61DF880088DC13 /* Assets.xcassets */; };
-		B721D10C1F61DF880088DC13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B721D10A1F61DF880088DC13 /* LaunchScreen.storyboard */; };
-		B721D1231F61E1E70088DC13 /* FeedbackEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B721D1221F61DFD20088DC13 /* FeedbackEffect.swift */; };
-		B721D1271F61F0B10088DC13 /* Success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B721D1251F61F04D0088DC13 /* Success.m4a */; };
-		B795F1DF1F7D46E4001C1296 /* MessageTone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795F1DE1F7D46E4001C1296 /* MessageTone.swift */; };
-		B795F1E11F7D46EC001C1296 /* SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795F1E01F7D46EC001C1296 /* SoundEffect.swift */; };
-		B795F1E31F7D4873001C1296 /* VibrationFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795F1E21F7D4873001C1296 /* VibrationFeedback.swift */; };
-		B795F1E51F7D488B001C1296 /* URL+SoundEmitting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795F1E41F7D488B001C1296 /* URL+SoundEmitting.swift */; };
-		B795F1E71F7D49B6001C1296 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795F1E61F7D49B6001C1296 /* HapticFeedback.swift */; };
+		B73F346A22DBCD08003AFC57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F346022DBCD08003AFC57 /* ViewController.swift */; };
+		B73F346B22DBCD08003AFC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B73F346122DBCD08003AFC57 /* Assets.xcassets */; };
+		B73F346C22DBCD08003AFC57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73F346222DBCD08003AFC57 /* LaunchScreen.storyboard */; };
+		B73F346D22DBCD08003AFC57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73F346422DBCD08003AFC57 /* Main.storyboard */; };
+		B73F346E22DBCD08003AFC57 /* Success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B73F346722DBCD08003AFC57 /* Success.m4a */; };
+		B73F346F22DBCD08003AFC57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F346822DBCD08003AFC57 /* AppDelegate.swift */; };
+		B73F347A22DBCF85003AFC57 /* FeedbackEffect in Frameworks */ = {isa = PBXBuildFile; productRef = B73F347922DBCF85003AFC57 /* FeedbackEffect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B721D0FE1F61DF880088DC13 /* FeedbackEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedbackEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B721D1011F61DF880088DC13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B721D1031F61DF880088DC13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B721D1061F61DF880088DC13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B721D1081F61DF880088DC13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B721D10B1F61DF880088DC13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B721D10D1F61DF880088DC13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B721D1221F61DFD20088DC13 /* FeedbackEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackEffect.swift; sourceTree = "<group>"; };
-		B721D1251F61F04D0088DC13 /* Success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Success.m4a; sourceTree = "<group>"; };
-		B795F1DE1F7D46E4001C1296 /* MessageTone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTone.swift; sourceTree = "<group>"; };
-		B795F1E01F7D46EC001C1296 /* SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffect.swift; sourceTree = "<group>"; };
-		B795F1E21F7D4873001C1296 /* VibrationFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationFeedback.swift; sourceTree = "<group>"; };
-		B795F1E41F7D488B001C1296 /* URL+SoundEmitting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+SoundEmitting.swift"; sourceTree = "<group>"; };
-		B795F1E61F7D49B6001C1296 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
+		B721D0FE1F61DF880088DC13 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B73F346022DBCD08003AFC57 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B73F346122DBCD08003AFC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B73F346322DBCD08003AFC57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B73F346522DBCD08003AFC57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B73F346722DBCD08003AFC57 /* Success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Success.m4a; sourceTree = "<group>"; };
+		B73F346822DBCD08003AFC57 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B73F346922DBCD08003AFC57 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B73F347722DBCEAB003AFC57 /* FeedbackEffect */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FeedbackEffect; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73F347A22DBCF85003AFC57 /* FeedbackEffect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +43,8 @@
 		B721D0F51F61DF880088DC13 = {
 			isa = PBXGroup;
 			children = (
-				B721D1001F61DF880088DC13 /* FeedbackEffect */,
+				B73F347722DBCEAB003AFC57 /* FeedbackEffect */,
+				B73F345F22DBCD08003AFC57 /* App */,
 				B721D0FF1F61DF880088DC13 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,44 +52,29 @@
 		B721D0FF1F61DF880088DC13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B721D0FE1F61DF880088DC13 /* FeedbackEffect.app */,
+				B721D0FE1F61DF880088DC13 /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B721D1001F61DF880088DC13 /* FeedbackEffect */ = {
+		B73F345F22DBCD08003AFC57 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				B721D1241F61F04D0088DC13 /* Sounds */,
-				B721D1211F61DFD20088DC13 /* Source */,
-				B721D1011F61DF880088DC13 /* AppDelegate.swift */,
-				B721D1031F61DF880088DC13 /* ViewController.swift */,
-				B721D1051F61DF880088DC13 /* Main.storyboard */,
-				B721D1081F61DF880088DC13 /* Assets.xcassets */,
-				B721D10A1F61DF880088DC13 /* LaunchScreen.storyboard */,
-				B721D10D1F61DF880088DC13 /* Info.plist */,
+				B73F346022DBCD08003AFC57 /* ViewController.swift */,
+				B73F346122DBCD08003AFC57 /* Assets.xcassets */,
+				B73F346222DBCD08003AFC57 /* LaunchScreen.storyboard */,
+				B73F346422DBCD08003AFC57 /* Main.storyboard */,
+				B73F346622DBCD08003AFC57 /* Sounds */,
+				B73F346822DBCD08003AFC57 /* AppDelegate.swift */,
+				B73F346922DBCD08003AFC57 /* Info.plist */,
 			);
-			path = FeedbackEffect;
+			path = App;
 			sourceTree = "<group>";
 		};
-		B721D1211F61DFD20088DC13 /* Source */ = {
+		B73F346622DBCD08003AFC57 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				B721D1221F61DFD20088DC13 /* FeedbackEffect.swift */,
-				B795F1E61F7D49B6001C1296 /* HapticFeedback.swift */,
-				B795F1E21F7D4873001C1296 /* VibrationFeedback.swift */,
-				B795F1E41F7D488B001C1296 /* URL+SoundEmitting.swift */,
-				B795F1E01F7D46EC001C1296 /* SoundEffect.swift */,
-				B795F1DE1F7D46E4001C1296 /* MessageTone.swift */,
-			);
-			name = Source;
-			path = ../../Source;
-			sourceTree = "<group>";
-		};
-		B721D1241F61F04D0088DC13 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				B721D1251F61F04D0088DC13 /* Success.m4a */,
+				B73F346722DBCD08003AFC57 /* Success.m4a */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -105,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B721D0FD1F61DF880088DC13 /* FeedbackEffect */ = {
+		B721D0FD1F61DF880088DC13 /* Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B721D11B1F61DF890088DC13 /* Build configuration list for PBXNativeTarget "FeedbackEffect" */;
+			buildConfigurationList = B721D11B1F61DF890088DC13 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
 				B721D0FA1F61DF880088DC13 /* Sources */,
 				B721D0FB1F61DF880088DC13 /* Frameworks */,
@@ -117,9 +94,12 @@
 			);
 			dependencies = (
 			);
-			name = FeedbackEffect;
+			name = Example;
+			packageProductDependencies = (
+				B73F347922DBCF85003AFC57 /* FeedbackEffect */,
+			);
 			productName = FeedbackEffect;
-			productReference = B721D0FE1F61DF880088DC13 /* FeedbackEffect.app */;
+			productReference = B721D0FE1F61DF880088DC13 /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B721D0FD1F61DF880088DC13 /* FeedbackEffect */,
+				B721D0FD1F61DF880088DC13 /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -162,10 +142,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B721D1271F61F0B10088DC13 /* Success.m4a in Resources */,
-				B721D10C1F61DF880088DC13 /* LaunchScreen.storyboard in Resources */,
-				B721D1091F61DF880088DC13 /* Assets.xcassets in Resources */,
-				B721D1071F61DF880088DC13 /* Main.storyboard in Resources */,
+				B73F346C22DBCD08003AFC57 /* LaunchScreen.storyboard in Resources */,
+				B73F346E22DBCD08003AFC57 /* Success.m4a in Resources */,
+				B73F346B22DBCD08003AFC57 /* Assets.xcassets in Resources */,
+				B73F346D22DBCD08003AFC57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,34 +156,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B721D1231F61E1E70088DC13 /* FeedbackEffect.swift in Sources */,
-				B721D1041F61DF880088DC13 /* ViewController.swift in Sources */,
-				B795F1E11F7D46EC001C1296 /* SoundEffect.swift in Sources */,
-				B721D1021F61DF880088DC13 /* AppDelegate.swift in Sources */,
-				B795F1E51F7D488B001C1296 /* URL+SoundEmitting.swift in Sources */,
-				B795F1E71F7D49B6001C1296 /* HapticFeedback.swift in Sources */,
-				B795F1DF1F7D46E4001C1296 /* MessageTone.swift in Sources */,
-				B795F1E31F7D4873001C1296 /* VibrationFeedback.swift in Sources */,
+				B73F346F22DBCD08003AFC57 /* AppDelegate.swift in Sources */,
+				B73F346A22DBCD08003AFC57 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B721D1051F61DF880088DC13 /* Main.storyboard */ = {
+		B73F346222DBCD08003AFC57 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B721D1061F61DF880088DC13 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B721D10A1F61DF880088DC13 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B721D10B1F61DF880088DC13 /* Base */,
+				B73F346322DBCD08003AFC57 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B73F346422DBCD08003AFC57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B73F346522DBCD08003AFC57 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -315,7 +289,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -326,8 +301,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = FeedbackEffect/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mergesort.FeedbackEffect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -341,8 +319,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = FeedbackEffect/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mergesort.FeedbackEffect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -362,7 +343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B721D11B1F61DF890088DC13 /* Build configuration list for PBXNativeTarget "FeedbackEffect" */ = {
+		B721D11B1F61DF890088DC13 /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B721D11C1F61DF890088DC13 /* Debug */,
@@ -372,6 +353,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B73F347922DBCF85003AFC57 /* FeedbackEffect */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeedbackEffect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B721D0F61F61DF880088DC13 /* Project object */;
 }
