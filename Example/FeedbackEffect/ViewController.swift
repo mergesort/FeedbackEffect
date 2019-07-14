@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     // These are just 4 combos, you can mix and match and make tons of your own!
-    
+
     @IBAction func urlAndHaptics(_ sender: Any) {
         // Uses the haptic feedback built into iOS along with an
         // alert sound to make a user feel they've finished a unit of work.
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         let soundUrl = Bundle.main.url(forResource: "Success", withExtension: "m4a")
         FeedbackEffect.play(sound: soundUrl, feedback: notificationFeedback)
     }
-    
+
     @IBAction func urlAndVibration(_ sender: Any) {
         // Uses the vibration feedback fallback (for users without 3D Touch devices)
         // built into iOS along with an alert sound to make a user feel they've finished
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         let tapSound = SoundEffect.tap
         FeedbackEffect.play(sound: tapSound, feedback: selectionFeedback)
     }
-    
+
     @IBAction func toneAndVibration(_ sender: Any) {
         // Uses the vibration feedback fallback (for users without 3D Touch devices)
         // built into iOS along with an alert sound to make a user feel they've finished
@@ -54,6 +54,5 @@ class ViewController: UIViewController {
         let sound = MessageTone.tweet
         FeedbackEffect.play(sound: sound, feedback: vibration)
     }
-    
-}
 
+}

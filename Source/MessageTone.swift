@@ -2,7 +2,6 @@ import AudioToolbox
 
 /// A set of text message sound effects that iOS provides through the `AudioServicesPlaySystemSound` subsystem.
 public enum MessageTone: Int {
-    
     case note = 1375
     case aurora = 1366
     case bamboo = 1361
@@ -50,5 +49,6 @@ extension MessageTone: SoundEmitting {
     public func makeSound() {
         AudioServicesPlaySystemSound(UInt32(self.rawValue))
     }
+
 }
 

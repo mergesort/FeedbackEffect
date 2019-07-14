@@ -3,13 +3,11 @@ import UIKit
 
 /// A protocol for encapsulating the different ways that sound can be created, for use in `FeedbackEffect`.
 public protocol SoundEmitting {
-    
     func makeSound()
 }
 
 /// A protocol for encapsulating the different ways that haptic feedback can be created, for use in `FeedbackEffect`.
 public protocol HapticEmitting {
-    
     func generateFeedback()
 }
 
@@ -39,4 +37,5 @@ public struct FeedbackEffect {
             feedback.generateFeedback()
         }
     }
+
 }
