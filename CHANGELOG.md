@@ -1,6 +1,6 @@
 # Change Log
 
-# 1.5 (2017-10-17)
+# 1.5 (2019-07-14)
 
 - Adding Swift 5 support.
 - Adding SPM support.
