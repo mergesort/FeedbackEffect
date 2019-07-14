@@ -1,5 +1,11 @@
 # Change Log
 
+# 1.5 (2017-10-17)
+
+- Adding Swift 5 support.
+- Adding SPM support.
+- Adding support for `.soft`, `.rigid` haptics available in iOS 13.
+
 # 1.4 (2017-10-17)
 
 - Adding Swift 4.2 support.
