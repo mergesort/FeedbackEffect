@@ -11,6 +11,8 @@ public enum HapticFeedback: HapticEmitting {
     fileprivate static let lightImpactGenerator = UIImpactFeedbackGenerator()
     fileprivate static let mediumImpactGenerator = UIImpactFeedbackGenerator()
     fileprivate static let heavyImpactGenerator = UIImpactFeedbackGenerator()
+    fileprivate static let softImpactGenerator = UIImpactFeedbackGenerator()
+    fileprivate static let rigidImpactGenerator = UIImpactFeedbackGenerator()
     fileprivate static let selectionGenerator = UISelectionFeedbackGenerator()
     fileprivate static let notificationGenerator = UINotificationFeedbackGenerator()
     
@@ -35,6 +37,12 @@ extension HapticFeedback {
 
             case .heavy:
                 HapticFeedback.heavyImpactGenerator.prepare()
+
+            case .soft:
+                HapticFeedback.softImpactGenerator.prepare()
+
+            case .rigid:
+                HapticFeedback.rigidImpactGenerator.prepare()
 
             }
             
@@ -61,6 +69,12 @@ extension HapticFeedback {
             case .heavy:
                 HapticFeedback.heavyImpactGenerator.impactOccurred()
                 
+            case .soft:
+                HapticFeedback.softImpactGenerator.impactOccurred()
+
+            case .rigid:
+                HapticFeedback.rigidImpactGenerator.impactOccurred()
+
             }
             
         case .selection:
