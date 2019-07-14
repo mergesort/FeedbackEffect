@@ -1,18 +1,20 @@
 # Change Log
 
-# 1.5 (2019-07-14)
+# 1.5.0 (2019-07-14)
 
-- Adding Swift 5 support.
-- Adding SPM support.
-- Adding support for `.soft`, `.rigid` haptics available in iOS 13.
+- Adding Swift 5 support.
+
+- Adding SPM support.
+
+- Adding support for `.soft`, `.rigid` haptics available in iOS 13.
 
 # 1.4 (2017-10-17)
 
-- Adding Swift 4.2 support.
+- Adding Swift 4.2 support.
 
 # 1.3 (2017-10-17)
 
-- Users can now specify a `UIImpactFeedbackStyle` as such.
+- Users can now specify a `UIImpactFeedbackStyle` as such.
 
 # 1.2 (2017-09-25)
 
